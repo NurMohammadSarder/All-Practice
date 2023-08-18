@@ -4,6 +4,116 @@
     <title>Class 3</title>
 </head>
 <body>
-    
+<!-- Table-1 : GradeSheet -->
+    <table border="2" cellspacing="5" cellpadding="5" height="400" width="400" align="center">
+    <!-- cellpadding is inner and cellspacing is outer space -->
+        <caption>Table of Grades</caption>
+        <tr>
+            <th>Name</th>
+            <th>English</th>
+            <th>Bangla</th>
+            <th>Math</th>
+        </tr>
+        <tr>
+            <td>Aditi</td>
+            <td>30</td>
+            <td>20</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Nasher</td>
+            <td>40</td>
+            <td>50</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Najmul</td>
+            <td>50</td>
+            <td>32</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Marzan</td>
+            <td>40</td>
+            <td>25</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Shourov</td>
+            <td>45</td>
+            <td>45</td>
+            <td>45</td>
+        </tr>
+    </table>
+<!-- GradeSheet Ends -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Table-2 :Merging -->
+    <table border="2" width="500" height="400" align="center">
+        <!-- row 1 -->
+        <tr>
+            <td colspan="2"></td>
+        <!-- Have to remove one td to merging two column -->
+            <td></td>
+            <td></td>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+            <td rowspan="3"></td>
+        <!-- Have to remove row 3 and 4 first td to merging three row -->
+            <td colspan="3"></td>
+        <!-- Have to remove two td to merging three column -->
+        </tr>
+        <!-- row 3 -->
+        <tr>
+            <td rowspan="2"></td>
+        <!-- Have to remove row 4's 2nd td to merging two row -->
+            <td></td>
+            <td rowspan="2"></td>
+        <!-- Have to remove row 4 last td to merging two row -->
+        </tr>
+        <!-- row 4 -->
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+<!-- Merging Ends -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Table-3 : Nested table -->
+<table bgcolor="red" cellpadding="0" cellspacing="0" width="600" height="600" align="center">
+    <!-- row 1 -->
+    <tr>
+        <td >
+            <table bgcolor="blue" width="600" height="300" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td bgcolor="tea1" width="300" height="300"></td>
+                    <td>
+                        <table bgcolor="salmon" width="300" height="300" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td bgcolor="salmon"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="crimson"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- row 2 -->
+    <tr>
+        <td bgcolor="aqua" width="600" height="300"></td>
+    </tr>
+</table>
+<!-- Nested table ends -->
 </body>
 </html>
