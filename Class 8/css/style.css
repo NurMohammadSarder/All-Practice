@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #000;
+}
+/* common css */
+.main {
+    width: 600;
+    height: 600;
+    background-color: red;
+}
+p {
+    background-color: rebeccapurple;
+}
+a {
+    background-color: aqua;
+}
