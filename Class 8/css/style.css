@@ -1,17 +1,88 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid #000;
+    margin: 0;
+    padding: 0;
 }
 /* common css */
+body{
+    background-color: #b3b3b3;
+}
 .main {
-    width: 600;
-    height: 600;
+    width: 700px;
+    height: 600px;
     background-color: red;
+    margin: 20px auto;
 }
-p {
-    background-color: rebeccapurple;
+h1{
+    text-align: center;
 }
-a {
+.a{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    float: left;
+}
+
+.a .aa {
+    height: 200px;
     background-color: aqua;
+    
+}
+.a .aa .aaa {
+    width: 200px;
+    height: 200px;
+    background-color: lavender;
+    float: left; 
+}
+.a .aa .aab {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(96, 100, 159);
+    float: left; 
+}
+.a .aa .aac {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(2, 165, 194);
+    float: left; 
+}
+
+.a .ab {
+    height: 200px;
+    background-color: rgb(0, 75, 86);
+}
+.a .aba{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    float: left;
+}
+.a .abb{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(42, 51, 53);
+    float: left;
+}
+.a .abba{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(0, 229, 255);
+    float: left;
+}.a .abbb{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 40, 249);
+    float: left;
+}
+
+
+
+.a .ac {
+    height: 200px;
+    background-color: rgb(85, 86, 158) ;
+}
+.b{
+    width: 100px;
+    height: 600px;
+    background-color: salmon;
+    float: left;
 }
