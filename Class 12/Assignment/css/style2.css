@@ -1,0 +1,19 @@
+/* @font-face {
+    font-family: Courgette;
+    src: url(../fonts/Courgette/Courgette-Regular.ttf);
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+.clr {
+    clear: both;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Common CSS */
