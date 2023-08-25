@@ -1,0 +1,144 @@
+@font-face {
+    font-family: courgette;
+    src: url(../fonts/Courgette/Courgette-Regular.ttf);
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255);
+}
+/* body {
+    background-color: gray;
+} */
+.clr {
+    clear: both;
+}
+/* Common CSS */
+.menu {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255); */
+    width: 1320px;
+}
+.logo {
+    float: left;
+    width: 30%;
+}
+.logo img {
+    width: 100px;
+}
+.menu-item {
+    float: left;
+    width: 70%;
+}
+.menu-item ul {
+    float: right;
+}
+.menu-item ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu .menu-item ul li a{
+    margin: 0 35px;
+    line-height: 79px;
+    font-family: courgette;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    transition: all linear 0.4s;
+    display: inline;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.menu-item ul li a:hover {
+    color: black;
+    border-bottom: 3px solid rgb(250, 186, 140);
+}
+/* 2nd menu starts */
+.menu .menu-item ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 140px;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: all linear 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-left: 2px solid rgb(250, 186, 140);
+}
+.menu .menu-item ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+
+.menu-item ul li ul li {
+    display: block;
+}
+.menu .menu-item ul li ul li a {
+    line-height: 50px;
+    display: block;
+    margin: 0;
+}
+/* banner starts */
+.banner {
+    padding-top: 50px;
+    height: 100vh;
+}
+
+.banner-text {
+    float: left;
+    width: 54.5%;
+    padding-top: 110px;
+    padding-right: 117px;
+    font-family: courgette;
+}
+.banner-img {
+    float: left;
+    width: 45.5%;
+}
+.banner-img img {
+    padding: 0 50px;
+    height: 500px;
+}
+.banner .banner-text h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.banner .banner-text h1 span{
+    color: black;
+}
+.banner .banner-text h1 .stop {
+    color: rgb(124, 124, 138);
+    font-weight: 100;
+}
+.banner .banner-text p{
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+.banner .banner-text a {
+    margin-top: 4px;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background: purple;
+}
