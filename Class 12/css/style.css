@@ -1,0 +1,169 @@
+@font-face {
+    font-family: courgette;
+    src: url(../fonts/Courgette/Courgette-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.clr {
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+/* common CSS */
+
+/* menu starts */
+.menu-bg {
+    background: #A9C9FF;
+    background: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%);
+    margin-bottom: 200px;
+}
+.menu {
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    width: 30%;
+    float: left;
+}
+.logo img {
+    margin: 14px 0 0 0;
+}
+.menu-item {
+    width: 70%;
+    float: left;
+}
+.menu .menu-item ul  {
+    float: right;
+}
+.menu .menu-item ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu .menu-item ul li a {
+    color: rgb(2,0,36);
+    font-size: 20px;
+    margin: 0 15px;
+    border-bottom: 3px solid transparent;
+    line-height: 80px;
+    font-family: courgette;
+    transition: all linear 0.4s;
+}
+
+/* Class 10 */
+    
+.menu .menu-item ul li a:hover {
+    color: red;
+    border-bottom: 3px solid seashell;
+}
+/* menu step 2 */
+.menu .menu-item ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 140px;
+    background: #A9C9FF;
+    background: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%);
+    transform: translateX(-50%);
+    text-align: center;
+    transition: all linear 0.4s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    border-left: 2px solid seashell;
+}
+.menu .menu-item ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+.menu .menu-item ul li ul li {
+    display: block;
+}
+
+.menu .menu-item ul li ul li a {
+    line-height: 50px;
+    display: block;
+    margin: 0;
+}
+
+/* menu step 3 */
+.menu .menu-item ul li ul li ul{
+    top: 10%;
+    display: block;
+    left: 100%;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.menu .menu-item ul li ul li ul a {
+    font-size: 18px;
+}
+
+
+/* 
+font-family: 'Courgette', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+.menu2 .menu-item ul li a {
+    color: rgb(2,0,36);
+    font-size: 20px;
+    margin: 0 15px;
+    line-height: 80px;
+    font-family: courgette;
+    transition: all linear 0.4s;
+    position: relative;
+    z-index: 1;
+
+}
+.menu2 .menu-item ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    left: -15px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+.menu2 .menu-item ul li a:hover::after {
+    width: 15px;
+
+}
+.menu2 .menu-item ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    width: 0;
+    left: 0;
+    height: 0;
+    background-color: #fff;
+    z-index: -1;
+
+}
+
+.menu2 .menu-item ul li a:hover::before {
+    width: 100%;
+    height: 100%;
+
+}

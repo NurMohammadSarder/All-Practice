@@ -1,0 +1,70 @@
+@font-face {
+    font-family: courgette;
+    src: url(../fonts/Courgette/Courgette-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.clr {
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+/* common CSS */
+
+/* menu starts */
+.menu-bg {
+    background-color: #A9C9FF;
+    background-image: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+.menu {
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    width: 30%;
+    float: left;
+}
+.logo img {
+    margin: 25px 0;
+}
+.menu-item {
+    width: 70%;
+    float: left;
+}
+.menu .menu-item ul  {
+    float: right;
+}
+.menu .menu-item ul li {
+    display: inline-block;
+}
+.menu .menu-item ul li a {
+    color: rgb(2,0,36);
+    font-size: 20px;
+    margin: 0 15px;
+    border-bottom: 3px solid transparent;
+    line-height: 80px;
+    font-family: courgette;
+    transition: all linear 0.4s;
+}
+
+/* Class 10 */
+    
+.menu .menu-item ul li a:hover {
+    color: red;
+    border-bottom: 3px solid seashell;
+}
+
+
+
+/* 
+font-family: 'Courgette', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/

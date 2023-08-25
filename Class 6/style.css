@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* common css */
+
+h2 {
+    color: red;
+    background-color: aqua;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+p {
+    background-color: yellow;
+    text-transform: capitalize;
+}
+.blue {
+    background-color: blue;
+    color: aliceblue;
+}
+.one {
+    font-size: 40px;
+    font-family: fantasy;
+}
+.text{
+    border: 20px solid rgb(41, 120, 14);
+    background-color: aqua;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.green{
+    width: 600px;
+    height: 420px;
+    background-color: green;
+    padding-top: 110px;
+    box-sizing: border-box;
+    padding-left: 180px;
+    margin-top: 50px;
+}
+.two {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+}

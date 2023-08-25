@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sqr {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* common css */
+.main {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 128, 128, 0.185);
+    margin: 0 auto;
+    position: relative;
+}
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    top: 10px;
+    left: 10px;
+}
+.two {
+    background-color: blueviolet;
+    top: 10px;
+    right: 10px;
+}
+.three {
+    background-color: aqua;
+    bottom: 10px;
+    left: 10px;
+}
+.four {
+    background-color: pink;
+    bottom: 10px;
+    right: 10px;
+}
+.five {
+    background-color: rgb(66, 209, 37);
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.six {
+    background-color: yellow;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.seven {
+    background-color: tomato;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.eight {
+    background-color: rgb(155, 42, 165);
+    bottom: 50%;
+    right: 10px;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+.nine {
+    background-color: limegreen;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    z-index: 1;
+}
+.ten {
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}
+.eleven {
+    background-color: blue;
+    top: 45%;
+    left: 45%;
+    z-index: -1;
+}
+
+.bg-image {
+    height: 400px;
+    background-image: url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}

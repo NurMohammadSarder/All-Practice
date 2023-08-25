@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* common css */
+
+.bg-img {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto 200px;
+    background-image: url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 15px solid rgb(119, 50, 7);
+    border-radius: 6.2%;
+    -webkit-border-radius: 6.2%;
+    -moz-border-radius: 6.2%;
+    -ms-border-radius: 6.2%;
+    -o-border-radius: 6.2%;
+    margin-top: 80px;
+    position: relative;
+}
+
+.pocket {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgb(123,123,123);
+    background: -moz-radial-gradient(circle, rgba(123,123,123,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(123,123,123,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(123,123,123,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b7b7b",endColorstr="#000000",GradientType=1);
+    position: absolute;
+}
+.one {
+    top: 0;
+    left: 0;
+}
+.two {
+    top: 0;
+    right: 0;
+}
+.three {
+    bottom: 0;
+    left: 0;
+}
+.four {
+    bottom: 0;
+    right: 0;
+}
+
+.rect { 
+    width: 35px;
+    height: 300px;
+    border: 2px solid rgb(118, 39, 12);
+    position: absolute;
+}
+.rect::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(212, 155, 0);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: -20px;
+    border: 2px solid rgb(118, 39, 12);
+    left: -2;
+}
+.rect::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(212, 155, 0);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: -20px;
+    border: 2px solid rgb(118, 39, 12);
+    left: -2;
+}
+
+.five, .six {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.five {
+    top: 50%;
+    left: 100px;
+
+}
+.six {
+    top: 50%;
+    right: 100px;
+}
+.seven, .eight {
+    left: 47%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.seven {
+    top: -47px;
+}
+.eight {
+    bottom: -47px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid rgb(118, 39, 12);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.circle img {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
