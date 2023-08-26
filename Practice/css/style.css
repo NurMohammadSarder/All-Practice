@@ -121,10 +121,35 @@ body {
 }
 .menu-item ul li ul li a{
     line-height: 50px;
-    display: inline-block;
+    display: block;
     margin: 0;
+    border-bottom: 3px solid transparent;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
 }
-
+.menu-item ul li ul li a:hover {
+    border-bottom: 3px solid white;
+}
+.menu-item ul li ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    top: 50%;
+    left: -15px;
+    background-color: white;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.menu-item ul li ul li a:hover::after {
+    width: 12px;
+}
 /* 3rd Menu Starts  */
 .menu-item ul li ul li ul {
     display: block;
