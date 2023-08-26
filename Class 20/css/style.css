@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: courgette;
+    /* outline: 0; */
 }
 .clr {
     clear: both;
@@ -46,6 +47,12 @@ p {
 img {
     vertical-align: middle;
 }
+#no-margin {
+    margin-right: 0;
+}
+body, html {
+    scroll-behavior: smooth;
+}
 /* h1, h2 ,h3, h4, h5, h6, a {
     line-height: 0.8px;
 } */
@@ -55,11 +62,13 @@ img {
 .menu-bg {
     /* background: #A9C9FF;
     background: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%); */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
+    background: #A9C9FF;
+    background: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%);
+    z-index: 2;
 }
 .logo {
     width: 30%;
@@ -556,6 +565,7 @@ font-family: 'Roboto', sans-serif;
     padding: 100px 0;
     background: #A9C9FF;
     background: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%);
+    height: 100vh;
 }
 
 #team .members {
@@ -579,10 +589,10 @@ font-family: 'Roboto', sans-serif;
 
 #team .members .member-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /* top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; */
     background: #A9C9FF;
     background: linear-gradient(90deg, rgba(169, 201, 255, 0.341) 0%, rgba(255, 187, 236, 0.404) 100%);
     padding-top: 80%;
@@ -592,11 +602,19 @@ font-family: 'Roboto', sans-serif;
     -moz-transition: all linear 0.4s;
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 #team .members:hover .member-overlay {
     opacity: 1;
-
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 } 
 #team .members:hover img {
     transform: scale(1.1);
@@ -605,3 +623,81 @@ font-family: 'Roboto', sans-serif;
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
+#team .members .member-overlay i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid black;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#team .members .member-overlay i:hover {
+    color: white;
+    background: #A9C9FF;
+    background: linear-gradient(90deg, rgb(169, 201, 255) 0%, rgb(255, 187, 236) 100%);
+    border-color: white;   
+}
+
+.test {
+    margin: 100px;
+    width: 500px;
+    height: 200px;
+    background-color: pink;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+/* .test:hover {
+    transform: skewy(-20deg);
+    -webkit-transform: skewy(-20deg);
+    -moz-transform: skewy(-20deg);
+    -ms-transform: skewy(-20deg);
+    -o-transform: skewy(-20deg);
+} */
+
+/* input {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+input::placeholder {
+    font-size: 15px;
+}
+input:focus-visible {
+    outline: 1px solid pink;
+}
+textarea {
+    width: 200px;
+    height: 100px;
+    resize: vertical;
+}
+button {
+    font-size: 20px;
+    background-color: pink;
+    padding: 20px 35px;
+    border: transparent;
+    color: #000;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+button:hover {
+    background-color: #A9C9FF;
+    color: white;
+} */
