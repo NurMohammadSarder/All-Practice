@@ -467,5 +467,80 @@ header.top-sec {
 
 /* testimonial ends */
 
+/* sub-footer starts */
+#sub-section {
+    padding-top: 20px;
+    background-color: rgb(53, 53, 53);
+}
+.sub-section {
+    color: #fff;
+}
+.sub-section .sub-section-part {
+    padding: 10px;
+    float: left;
+}
+.sub-section .sub-section-part img {
+    margin-bottom: 24px;
+}
+.sub-section .sub-section-part h3 {
+    margin: 12px 0 35px;
+}
+.sub-section .paragraph p {
+    margin-bottom: 23px;
+}
+.sub-section .sub-section-part .contact-us-footer {
+    margin-bottom: 14px;
+}
+.sub-section .sub-section-part .contact-us-footer i {
+    float: left;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #5ec6f2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+}
+.sub-section .sub-section-part .contact-us-footer text {
+    float: left;
+}
+.sub-section .sub-section-part .links ul {
+    float: left;
+    width: 45%;
+    margin: 0 4px;
+}
+.sub-section .sub-section-part .links ul li {
+    margin-bottom: 10px;
+}
+.sub-section .sub-section-part .links ul li a {
+    color: #fff;
+}
+.sub-section .sub-section-part .flicker-photo ul li {
+    float: left;
+    padding: 0 15px 15px 0;
+}
+.sub-section .sub-section-part .flicker-photo ul li img {
+    margin: 0;
+}
+#sub-section .sub-section .onep {
+    width: 169px;
+}
+#sub-section .sub-section .twop {
+    width: 248px;
+}
+#sub-section .sub-section .threep {
+    width: 208px;
+}
+#sub-section .sub-section .fourp {
+    width: 335px;
+}
+
+
+/* sub-footer ends */
+
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
