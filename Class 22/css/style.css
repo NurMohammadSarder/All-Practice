@@ -412,5 +412,60 @@ header.top-sec {
 
 /* Team ends */
 
+/* testimonial starts */
+#testimonial {
+    padding-top: 60px;
+    padding: 60px;
+}
+#testimonial .testimonial-parts .testimonial-part {
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+    text-align: center;
+}
+#testimonial .testimonial-heading {
+    padding-bottom: 15px;
+}
+
+#testimonial .testimonial-parts .testimonial-text::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    z-index: -1;
+}
+#testimonial .testimonial-parts .testimonial-text{
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+}
+
+#testimonial .testimonial-parts .testimonial-text p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+#testimonial .testimonial-parts .testimonial-text .title {
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 8px;
+}
+#testimonial .testimonial-parts .testimonial-text .ratings {
+    color: #0872b9;
+    margin-top: 3px;
+
+}
+
+/* testimonial ends */
+
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
