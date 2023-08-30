@@ -40,12 +40,14 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: -5px;
     left: 0;
-    
-
+}
+.member-name {
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
 }
 p {
     line-height: 24px;
-    font-size: 13px;
+    font-size: 14px;
 }
 .clr {
     clear: both;
@@ -346,6 +348,69 @@ header.top-sec {
     -o-transform: translateX(40%);
 } */
 /* gallery ends */
+
+/* Team starts */
+#team {
+    padding-top: 60px;
+}
+#team .team-heading {
+    padding-bottom: 40px;
+}
+
+#team .team-members .team-member{
+    position: relative;
+    padding: 0 9px;
+    float: left;
+}
+#team .team-members .team-member:hover .team-overlay {
+    opacity: 1;
+}
+#team .team-members .team-member .team-overlay {
+    position: absolute;
+    top: 0;
+    right: 9px;
+    text-align: center;
+    padding: 28px 0;
+    width: 80px;
+    height: 270px;
+    background-color: rgba(53, 53, 53, 0.5);
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#team .team-members .team-member .team-overlay li {
+    padding-bottom: 15px;
+}
+#team .team-members .team-member .team-overlay a {
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+#team .team-members .team-member .team-overlay a:hover {
+    border: 2px solid #5ec6f2;
+    background-color: #5ec6f2;
+}
+#team .team-member {
+    text-align: center;
+}
+#team .team-text h3 {
+    padding: 9px 0 1px;
+}
+
+/* Team ends */
 
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
