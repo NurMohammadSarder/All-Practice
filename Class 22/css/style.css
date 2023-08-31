@@ -58,6 +58,7 @@ p {
 header.top-sec {
     padding: 11px 0;
     background-color: #0872b9;
+
 }
 .welcome {
     color: #e7e7e7;
@@ -98,6 +99,18 @@ header.top-sec {
 /* Header part ends */
 
 /* Nav bar starts  */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 0;
+    background-color: #fff;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 10px 0 #bebebe;
+}
 .menu-bg .logo, .menu-bg .menu-items {
     float: left;
     width: 50%;
@@ -539,8 +552,24 @@ header.top-sec {
     width: 335px;
 }
 
-
 /* sub-footer ends */
+
+/* footer starts  */
+footer {
+    text-align: center;
+    background-color: #555;
+}
+.footer {
+    padding: 10px 0;
+}
+.footer p {
+    color: #fff;
+}
+.footer .colorful {
+    color: #5ec6f2;
+    text-transform: uppercase;
+}
+/* footer ends  */
 
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
