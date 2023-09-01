@@ -1,8 +1,10 @@
-.root {
+.root{
     --bg-orange:linear-gradient(0deg, rgba(252,227,138,0.896796218487395) 0%, rgba(243,129,129,0.896796218487395) 100%);
     --peach: #f38181;
     --yellow: #fce38a;
     --grey: #999;
+    --sky: #95e1d3;
+    --lwhite: #f8f8f8;
 
     --font1: 'Kaushan Script', cursive;
     --font2: 'Montserrat', sans-serif;
@@ -31,6 +33,7 @@ p {
     font-size: 15px;
     color: #999;
     font-family: 'Roboto', sans-serif;
+    line-height: 24px;
 }
 .container {
     width: 1200px;
@@ -40,6 +43,7 @@ p {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
     color: #333;
+    padding-top: 109px;
 }
 .sec-head h2 {
     font-size: 30px;
@@ -47,6 +51,9 @@ p {
     color: #333;
     text-transform: uppercase;
     position: relative;
+    padding-top: 23px;
+    padding-bottom: 43px;
+    font-size: 30px;
 }
 .sec-head h2::after {
     content: "";
@@ -169,18 +176,9 @@ p {
     align-items: center;
     text-align: center;
 }
-.about .about-text {
-    padding-top: 95px;
-}
-.about .about-text h3 {
-    padding-bottom: 26px;
-}
-.about .about-text h2 {
-    padding-bottom: 41px;
-}
 .about .about-text p {
     padding-top: 47px;
-    line-height: 1.5;
+    line-height: 24px;
 }
 
 .about .about-parts {
@@ -235,6 +233,236 @@ p {
 }
 /* about ends */
 
-/* font-family: 'Kaushan Script', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
+/* counter starts */
+#counter {
+    background-color: #95e1d3;
+    padding: 90px 0;
+}
+.counter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    text-align: center;
+}
+.counter .count span {
+    font-size: 72px;
+    font-family: var(--font2);
+    color: #fff;
+    padding-bottom: 30px;
+}
+.counter .count p {
+    font-size: 14px;
+    font-family: var(--font2);
+    color: #fff;
+    text-transform: uppercase;
+}
+/* counter ends */
+
+/* service starts */
+.service .service-text {
+    text-align: center;
+}
+.service .service-parts {
+    padding-top: 67px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 90px 0;
+    padding-bottom: 120px;
+}
+.service .service-parts .service-item {
+    flex-basis: 357px;
+    display: flex;
+}
+.service .service-parts .service-item .service-icon {
+    padding: 0 26px 40px;
+    text-align: center;
+}
+.service .service-parts .service-item .service-icon i {
+    color: #95e1d3;
+}
+
+.service .service-parts .service-item .service-details h3{
+    font-size: 14px;
+    font-family: var(--font2);
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+
+
+/* service ends */
+
+/* design starts */
+#design {
+    text-align: center;
+    background: url(../images/banner2.png);
+    background-position: center;
+    background-size: cover;
+}
+#design .design-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.design .design-img img {
+    padding-top: 45px;
+}
+.design .design-img {
+    position: relative;
+}
+.design .design-img .phone {
+    position: absolute;
+    bottom: -95px;
+    right: 206px;
+}
+/* design ends */
+
+
+/* service1 starts */
+#service1 {
+    text-align: center;
+}
+.service1 .service1-head p {
+        padding-top: 47px;
+        line-height: 24px;
+        padding-bottom: 120px;
+}
+/* service1 ends */
+
+/* testimonial starts */
+#testimonial {
+    background-color: #f8f8f8;
+}
+.testimonial1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 49px;
+    padding:70px 110px;
+    position: relative;
+}
+.testimonial1::before {
+    content: "\f053";
+    position: absolute;
+    top: 41%;
+    left: 0px;
+    font-size: 40px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    color: #999;
+
+}
+.testimonial1::after {
+    content: "\f054";
+    position: absolute;
+    top: 41%;
+    right: 0;
+    font-size: 40px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+    color: #999;
+
+}
+.testimonial .testimonial1 .testimonial-logo i {
+    font-size: 63px;
+    border: 3px solid #95e1d3;
+    color: #95e1d3;
+    padding: 41px;
+    text-align: center;
+}
+.testimonial .testimonial1 .testimonial-details p {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 28px;
+}
+.testimonial .testimonial1 .testimonial-details h3 {
+    padding-left: 70px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    position: relative;
+}
+.testimonial .testimonial1 .testimonial-details h3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+/* testimonial ends */
+
+/* team starts  */
+.team {
+    text-align: center;
+}
+.team .team-head p {
+    padding-top: 47px;
+    line-height: 24px;
+    padding-bottom: 96px;
+    
+}
+.team .team-details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 118px;
+}
+
+.team .team-details .member .member-overlay {
+    width: 380px;
+    height: 470px;
+    background: #95e1d3;
+}
+.team .team-details .member .member-overlay .member-img {
+    position: relative;
+}
+.team .team-details .member .member-overlay .member-img:hover {
+    left: -10px;
+    top: -10px;
+}
+.team .team-details .member .member-overlay .member-img .member-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(252,227,138,0.896796218487395) 0%, rgba(243,129,129,0.896796218487395) 100%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team .team-details .member .member-overlay .member-img .member-img-overlay:hover {
+    opacity: 1;
+}
+.team .team-details .member .member-overlay .member-img .member-img-overlay ul {
+    display: flex;
+}
+.team .team-details .member .member-overlay .member-img .member-img-overlay ul li a {
+    background-color: var(--yellow);
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    color: var(--orange);
+    background-color: #fce38a;
+    border-right: 1px solid #f38181 ;
+    color: #f38181;
+}
+.team .team-details .member .member-overlay .member-img .member-img-overlay ul li a:hover {
+    background-color: #f38181;
+    color: #fff;
+}
+
+.team .team-details .member-details {
+    padding-top: 31px;
+}
+.team .team-details .member-details h3 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.team .team-details .member-details p {
+    padding-top: 15px;
+    line-height: 0.8;
+}
+/* team ends  */
