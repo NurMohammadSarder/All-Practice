@@ -1,4 +1,4 @@
-.root{
+:root{
     --bg-orange:linear-gradient(0deg, rgba(252,227,138,0.896796218487395) 0%, rgba(243,129,129,0.896796218487395) 100%);
     --peach: #f38181;
     --yellow: #fce38a;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-size: 15px;
-    color: #999;
+    color: var(--grey);
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
 }
@@ -62,7 +62,7 @@ p {
     left: 50%;
     width: 60px;
     height: 3px;
-    background-color: #f38181;
+    background-color: var(--peach);
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -96,8 +96,8 @@ p {
     border-bottom: 3px solid transparent;
 }
 .menu .menu-item ul li a:hover {
-    border-bottom: 3px solid #fce38a;
-    color: #fce38a;
+    border-bottom: 3px solid var(--yellow);
+    color: var(--yellow);
 }
 /* menu ends  */
 
@@ -191,7 +191,7 @@ p {
 .about .about-parts .about-part-bg {
     width: 100%;
     height: 100%;
-    background-color: #95e1d3;
+    background-color: var(--sky);
 }
 .about .about-parts .about-part {
     position: relative;
@@ -235,7 +235,7 @@ p {
 
 /* counter starts */
 #counter {
-    background-color: #95e1d3;
+    background-color: var(--sky);
     padding: 90px 0;
 }
 .counter {
@@ -279,7 +279,7 @@ p {
     text-align: center;
 }
 .service .service-parts .service-item .service-icon i {
-    color: #95e1d3;
+    color: var(--sky);
 }
 
 .service .service-parts .service-item .service-details h3{
@@ -331,7 +331,7 @@ p {
 
 /* testimonial starts */
 #testimonial {
-    background-color: #f8f8f8;
+    background-color: var(--lwhite);
 }
 .testimonial1 {
     display: flex;
@@ -348,7 +348,7 @@ p {
     font-size: 40px;
     font-family: "Font Awesome 5 Pro";
     font-weight: 300;
-    color: #999;
+    color: var(--grey);
 
 }
 .testimonial1::after {
@@ -359,13 +359,13 @@ p {
     font-size: 40px;
     font-family: "Font Awesome 5 Pro";
     font-weight: 300;
-    color: #999;
+    color: var(--grey);
 
 }
 .testimonial .testimonial1 .testimonial-logo i {
     font-size: 63px;
-    border: 3px solid #95e1d3;
-    color: #95e1d3;
+    border: 3px solid var(--sky);
+    color: var(--sky);
     padding: 41px;
     text-align: center;
 }
@@ -387,7 +387,7 @@ p {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #f38181;
+    background-color: var(--peach);
 }
 
 /* testimonial ends */
@@ -411,7 +411,7 @@ p {
 .team .team-details .member .member-overlay {
     width: 380px;
     height: 470px;
-    background: #95e1d3;
+    background: var(--sky);
 }
 .team .team-details .member .member-overlay .member-img {
     position: relative;
@@ -426,7 +426,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(252,227,138,0.896796218487395) 0%, rgba(243,129,129,0.896796218487395) 100%);
+    background: var(--bg-orange);
     opacity: 0;
     display: flex;
     align-items: center;
@@ -444,12 +444,12 @@ p {
     height: 56px;
     line-height: 56px;
     color: var(--orange);
-    background-color: #fce38a;
-    border-right: 1px solid #f38181 ;
-    color: #f38181;
+    background-color: var(--yellow);
+    border-right: 1px solid var(--peach);
+    color: var(--peach);
 }
 .team .team-details .member .member-overlay .member-img .member-img-overlay ul li a:hover {
-    background-color: #f38181;
+    background-color: var(--peach);
     color: #fff;
 }
 
