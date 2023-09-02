@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn {
+    padding: 20px 50px;
+}
+.box {
+    padding: 50px;
+    background-color: aqua;
+    /* display: none; */
+}
+.btn-1 {
+    background-color: red;
+}
+.btn-2 {
+    background-color: brown;
+}
+.btn-3 {
+    background-color: rgb(184, 184, 184);
+}
+
+.box-1 {
+    padding: 50px;
+    background-color: aqua;
+}
+.box-2 {
+    background-color: purple;
+    padding: 50px;
+    
+}
+.box-3 {
+    background-color: purple;
+    padding: 50px;
+    
+}
+.gol {
+    background-color: blueviolet;
+    width: 500px;
+    width: 500px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

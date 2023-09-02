@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+    color: inherit;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Common CSS  */
+#form {
+    margin-top: 100px;
+}
+.form-main {
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 3px 3px 28px 4px rgba(0, 0, 0, .75);
+    padding: 40px 30px;
+    width: 500px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.form-main h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.form-main {
+    text-align: center;
+}
+.form-main .input-group {
+    margin-bottom: 10px;
+}
+.form-main input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.form-main button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    width: 200px;
+}
+.form-main .input-group p {
+    color: red;
+}
