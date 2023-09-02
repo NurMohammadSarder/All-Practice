@@ -400,3 +400,9 @@ nav .menu ul li a:hover {
     flex-wrap: wrap;
 } */
 /* footer ends  */
+
+@media only screen and (max-width:600px) {
+    .about-parts {
+        flex-wrap: wrap
+    }
+}
