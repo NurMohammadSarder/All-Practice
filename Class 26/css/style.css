@@ -316,3 +316,87 @@ nav .menu ul li a:hover {
     color: #fff;
 }
 /* team ends */
+
+/* work starts */
+.work .work-head {
+    text-align: center;
+    padding-top: 106px;
+}
+#work .workrow {
+    display: flex;
+} 
+#work .workrow .workcol {
+    flex-basis: 25%;
+}
+#work .workrow .workcol .works {
+    position: relative;
+}
+#work .workrow .workcol .works .work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0;
+    transition: var(--transit);
+    -webkit-transition: var(--transit);
+    -moz-transition: var(--transit);
+    -ms-transition: var(--transit);
+    -o-transition: var(--transit);
+}
+#work .workrow .workcol .works .work-overlay:hover {
+    opacity: 1;
+}
+#work .workrow .workcol .works .work-overlay i {
+    font-size: 32px;
+}
+#work .workrow .workcol .works .work-overlay h4 {
+    padding: 20px 0 17px;
+    font-family: var(--heading-text2);
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+#work .workrow .workcol .works .work-overlay p {
+    font-size: 14px;
+    font-style: italic;
+    font-family: var(--heading-text3);
+    font-weight: 300;
+    color: #fff;
+}
+/* work ends */
+
+/* footer starts */
+#contact {
+    padding-top: 75px;
+    background-color: #f8f8f8;
+}
+.contact-content {
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid #999;
+}
+.contact-content .info {
+    flex-shrink: 1.2;
+}
+.contact-content .info h6 {
+    border-bottom: 1px solid #999;
+}
+.contact-content .blogs {
+    flex-shrink: .3;
+}
+.contact-content .blogs .blog {
+    display: flex;
+}
+/* .contact-content .instagram .foot-gallery {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+} */
+/* footer ends  */
