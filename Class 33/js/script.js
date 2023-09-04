@@ -39,4 +39,15 @@ $(document).ready(function(){
     $(".btn-9").click(function(){
         $(".box-3").toggleClass("gol");
     });
+
+    // Hide/show toggle
+    $(".btn-10").click(function(){
+        $(".box-4").hide();
+    });
+    $(".btn-11").click(function(){
+        $(".box-4").show();
+    });
+    $(".btn-12").click(function(){
+        $(".box-4").toggle();
+    });
 });
