@@ -100,7 +100,7 @@ header.top-sec {
 
 /* Nav bar starts  */
 
-.sticky {
+/* .sticky {
     position: sticky;
     top: 0;
     left: 0;
@@ -110,6 +110,25 @@ header.top-sec {
     background-color: #fff;
     scroll-behavior: smooth;
     box-shadow: 0 0 10px 0 #bebebe;
+} */
+.menu-bg.menu-fixed {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    animation: fixed ;
+    -webkit-animation: fixed 1s forwards;
+}
+@keyframes fixed {
+    from{
+        top: -30px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
 }
 .menu-bg .logo, .menu-bg .menu-items {
     float: left;
@@ -570,6 +589,119 @@ footer {
     text-transform: uppercase;
 }
 /* footer ends  */
+
+/* back to top starts  */
+.btn-top {
+    position: fixed;
+    z-index: 99;
+    background-color: #5ec6f2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: 50px;
+    right: 50px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+/* back to top ends  */
+
+/* preloader starts  */
+.pre-loader {
+    height: 100vh;
+    background-color: #e7e7e7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+/* preloader ends  */
+
+/* popup starts  */
+.full-body.pop {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.pop-up-bg {
+    height: 100vh;
+    background-color: #35353591;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    display: none;
+}
+
+.pop-up {
+    width: 50%;
+    height: 50vh;
+    background-color: #e7e7e7;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+    animation: popload 1s;
+    -webkit-animation: popload 1s;
+    box-shadow: 0 0 15px #e7e7e7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform-origin: 50px 50px;
+}
+@keyframes popload {
+    0% {
+        opacity: 0;
+        transform: scale(0) translate(-50%,-50%);
+        -webkit-transform: scale(0) translate(-50%,-50%);
+        -moz-transform: scale(0) translate(-50%,-50%);
+        -ms-transform: scale(0) translate(-50%,-50%);
+        -o-transform: scale(0) translate(-50%,-50%);
+}
+    50% {
+        transform: scale(1.1) translate(-50%,-50%);
+        -webkit-transform: scale(1.1) translate(-50%,-50%);
+        -moz-transform: scale(1.1) translate(-50%,-50%);
+        -ms-transform: scale(1.1) translate(-50%,-50%);
+        -o-transform: scale(1.1) translate(-50%,-50%);
+}
+    100% {
+        transform: scale(1) translate(-50%,-50%);
+        -webkit-transform: scale(1) translate(-50%,-50%);
+        -moz-transform: scale(1) translate(-50%,-50%);
+        -ms-transform: scale(1) translate(-50%,-50%);
+        -o-transform: scale(1) translate(-50%,-50%);
+}
+    
+}
+.pop-up i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #5ec6f2;
+    font-size: 24px;
+}
+/* popup ends  */
 
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
