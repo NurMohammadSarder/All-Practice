@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+/* Common CSS */
+
+nav.navbar {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+.navbar .navbar-brand img{
+    height: 70px;
+
+}
+.navbar ul.navbar-nav li a.nav-link {
+    padding: 0;
+    margin-left: 44px;
+    color: #fff;
+}
+.navbar ul.navbar-nav li a.nav-link:hover {
+    color: #218fcf;
+}
+.navbar ul.navbar-nav li a.nav-link.active {
+    color: #218fcf;
+}
+/* navbar ends  */
+
+/* banner starts */
+#banner {
+    background: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+#banner .banner-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 230px 0 120px;
+}
+
+/* banner ends */
+
+/* about starts */
+#about {
+    padding: 100px 0;
+
+
+}
+/* about starts */
+
+/* feature starts  */
+#feature {
+    padding: 100px 0;
+}
+#feature .nav-link i {
+    font-size: 60px;
+}
+#feature .nav-link h4 {
+}
+
+
+
+/* feature ends  */
