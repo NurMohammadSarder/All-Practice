@@ -1,0 +1,161 @@
+:root {
+    --blue: rgb(71, 145, 201);
+    --transition: all linear 0.4s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-bottom: 0;
+}
+
+.sec-head{
+    text-transform: uppercase;
+}
+
+/* Style the text */
+.sec-head {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style the first underline */
+  .sec-head::before,
+  .sec-head::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    /*Adjustthedistanceoftheunderlinefromthetext*/left: 50%;
+    right: 0;
+    height: 2px;
+    /*Adjustthethicknessoftheunderline*/background-color: #000;
+    /*Adjustthecoloroftheunderline*/width: 100px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+  
+  /* Style the second underline */
+  .sec-head::after {
+    bottom: -8px; /* Adjust the distance of the second underline */
+  }
+/* Common CSS  */
+.navbar {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 0 0 40px;
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--blue);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color: var(--blue);
+}
+/* banner starts */
+#banner {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 165px 0 130px 0;
+}
+.banner-overlay .row .col-lg-5 h1 {
+    font-weight: 700;
+}
+.banner-overlay .row .col-lg-5 span {
+    color: var(--blue);
+}
+.banner-overlay .row .col-lg-5 h3 {
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 10px;
+}
+.banner-overlay .row .col-lg-5 h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 170px;
+    height: 3px;
+    background-color: rgb(101, 97, 96);
+}
+.banner-overlay .row .col-lg-5 p {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.banner-overlay .row .col-lg-5 a {
+    padding: 10px 20px ;
+    font-weight: 500;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.banner-overlay .row .col-lg-5 a:hover {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: white;
+}
+/* banner ends */
+
+/* about starts  */
+#about {
+    padding: 100px 0;
+}
+#about .col-lg-6 p {
+    padding-top: 30px;
+}
+/* about ends  */
