@@ -854,7 +854,7 @@ p {
     padding-bottom: 38px;
 }
 
-.footer .footer-parts .footer-part .social-links span i {
+.footer .footer-parts .footer-part .social-links .link span i {
     color: var(--sky);
     padding: 0 7px;
 }
